@@ -26,8 +26,8 @@ public class EventDetailActivity extends AppCompatActivity {
         String eventType = intent.getStringExtra(EXTRA_EVENT_TYPE);
 
         ImageView imageView = findViewById(R.id.image_view_detail);
-        TextView textviewEventName = findViewById(R.id.text_view_creator_detail);
-        TextView textviewEventType = findViewById(R.id.text_view_like_detail);
+        TextView textviewEventName = findViewById(R.id.text_view_event_name);
+        TextView textviewEventType = findViewById(R.id.text_view_event_desc);
 
         Picasso.with(this).load(imageUrl).fit().centerInside().into(imageView);
         textviewEventName.setText(eventName);
